@@ -3,16 +3,17 @@ import json
 import numpy as np
 import pandas as pd
 import os
+import CONFIG
 
 class Prediction():
     def __init__(self):
         print(os.getcwd())
 
     def load_raw(self):
-        with open(r"D:\learning\class\daily class notes\Daily Class Notes-20221224T085225Z-001\Daily Class Notes\iris_project\artifacts\logesticReg.pkl", "rb") as model_file:
+        with open(CONFIG.MODEL_PATH, "rb") as model_file:
             self.model = pickle.load(model_file)
 
-        with open(r"D:\learning\class\daily class notes\Daily Class Notes-20221224T085225Z-001\Daily Class Notes\iris_project\artifacts\column_names.json") as col_file:
+        with open(CONFIG.COL_NAMES) as col_file:
             self.column_names = json.load(col_file)
 
     print("we are in load data")

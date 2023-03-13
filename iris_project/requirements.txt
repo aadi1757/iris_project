@@ -1,0 +1,5 @@
+
+flask=1.1.2=pyhd3eb1b0_0
+numpy=1.21.5=py39h7a0a035_1
+pandas=1.4.2=py39hd77b12b_0
+scikit-learn=1.0.2=py39hf11a4ad_1
